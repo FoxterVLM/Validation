@@ -1,7 +1,6 @@
 const select = document.querySelector('#regForm__select')
 select.addEventListener('change', () => {
   select.firstElementChild.textContent = '------'
-
 })
 
 const validate = new JustValidate("#reg_form");
