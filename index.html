@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__form">
+        <form id="reg_form">
+          <h2 class="form__title">Register</h2>
+          <!-- 1 -->
+          <div class="form__group">
+            <input
+              type="text"
+              placeholder="Name"
+              id="regForm__name"
+              name="regForm__name"
+            />
+          </div>
+          <!-- 1 -->
+
+          <!-- 2 -->
+          <div class="form__group">
+            <input
+              type="email"
+              placeholder="Email"
+              id="regForm__email"
+              name="regForm__email"
+            />
+          </div>
+          <!-- 2 -->
+
+          <!-- 3 -->
+          <div class="form__group">
+            <input
+              type="password"
+              placeholder="Password"
+              id="regForm__password"
+              name="regForm__password"
+            />
+          </div>
+          <!-- 3 -->
+
+          <!-- 4-->
+          <div class="form__group">
+            <input
+              type="password"
+              placeholder="Confirm password"
+              id="regForm__confirmPassword"
+              name="regForm__confirmPassword"
+            />
+          </div>
+          <!-- 4 -->
+
+          <!-- 5 -->
+          <div class="form__group">
+            <textarea
+              placeholder="Message"
+              id="regForm__message"
+              name="regForm__message"
+            ></textarea>
+          </div>
+          <!-- 5 -->
+
+          <!-- 6 -->
+          <div class="form__group">
+            <select name="regForm__select" id="regForm__select">
+              <option value="" class="select__option" selected>
+                Please select an option
+              </option>
+              <option value="1" class="select__option">1</option>
+              <option value="2" class="select__option">2</option>
+              <option value="3" class="select__option">3</option>
+              <option value="4" class="select__option">4</option>
+              <option value="5" class="select__option">5</option>
+            </select>
+          </div>
+          <!-- 6 -->
+
+          <!-- checkbox solo -->
+          <div class="form__group">
+            <label for="regForm__checkBox" id="soloCheckBox">
+              <input
+                type="checkbox"
+                id="regForm__checkBox"
+                name="regForm__checkBox"
+                value="yes"
+              />
+              <span class="checkmark"></span>
+              Choose it
+            </label>
+          </div>
+
+          <!-- checkbox solo -->
+
+          <!-- checkBox at least -->
+          <div class="form__group" id="checkBoxes">
+            <label for="regFormCheckBoxAtLeast1" id="soloCheckBox1">
+              <input type="checkbox" id="regFormCheckBoxAtLeast1" value="yes" name="a" class="obj"/>
+              <span class="checkmark"></span>
+              1
+            </label>
+            <label for="regFormCheckBoxAtLeast2" id="soloCheckBox2">
+              <input type="checkbox" id="regFormCheckBoxAtLeast2" value="yes" name="a" class="=obj"/>
+              <span class="checkmark"></span>
+              2
+            </label>
+            <label for="regFormCheckBoxAtLeast3" id="soloCheckBox3">
+              <input type="checkbox" id="regFormCheckBoxAtLeast3" value="yes" name="a" class="obj">
+              <span class="checkmark"></span>
+              3
+            </label>
+          </div>
+          <!-- checkBox at least -->
+
+          <!-- round radio -->
+          <div class="form__group" id="radioButtons">
+            <label for="regForm__radio" id="radio">
+              <input
+                type="radio"
+                id="regForm__radio1"
+                value="1"
+                name="choice"
+              /><span class="checkmark__radio"></span> 1
+            </label>
+            <label for="regForm__radio" id="radio">
+              <input
+                type="radio"
+                id="regForm__radio2"
+                value="2"
+                name="choice"
+              /><span class="checkmark__radio"></span> 2
+            </label>
+          </div>
+          <!-- round radio -->
+
+          <!-- num -->
+          <div class="form__group">
+            <input
+              type="text"
+              placeholder="Input any number"
+              id="regForm__num"
+            />
+          </div>
+          <!-- num -->
+
+          <!-- integer -->
+          <div class="form__group">
+            <input
+              type="text"
+              placeholder="Input any integer number"
+              id="regForm__int"
+            />
+          </div>
+          <!-- integer -->
+
+          <!-- 10to20 -->
+          <div class="form__group">
+            <input type="text" placeholder="Input a number between 10 and 20" id="regForm__10"/>
+          </div>
+          <!-- 10to20 -->
+
+          <button id="regForm__send" type="submit">Register</button>
+          <button id="regForm__showPass" type="button">Show password</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
